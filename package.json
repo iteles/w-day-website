@@ -2,9 +2,9 @@
   "name": "ines-and-nelson-get-married",
   "version": "0.0.1",
   "description": "Wedding day website so guests have all the information they need",
-  "main": "index.html",
+  "main": "public/index.html",
   "scripts": {
-    "start": "live-server --port=8000"
+    "start": "live-server --port=8000 --open=public/"
   },
   "repository": {
     "type": "git",
