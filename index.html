@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+      Ines + Nelson
+    </title>
+    <meta name="description" content="Build beautiful, responsive, readable interfaces.">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="author" content="@iteles @nelsonic">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.6.1/css/tachyons.min.css">
+    <link rel="shortcut icon" type="image/png" href="http://www.dwyl.io/img/favicon.ico"/>
+
+    <style>
+      .bg-in-green { background-color: #8BA951; }
+      .bg-in-yellow { background-color: #FBD000; }
+
+      .top-5 { top: 5rem; }
+      .left-25p {left: 25%; }
+
+      .sr-only{
+        color: red;
+        position:absolute;
+        width:1px;
+        height:1px;
+        padding:0;
+        margin:-1px;
+        border:0;
+        overflow:hidden;
+        clip: rect(0,0,0,0);
+      }
+
+    </style>
+  </head>
+
+  <body class="bg-white black h-100 h5">
+    <!-- <header class="sans-serif">
+      <div class="cover bg-left bg-center-l">
+        <div class="pb5 pb6-m pb7-l">
+          <nav class="bg-in-green dt w-100 mw8 center">
+            <div class="dtc w2 v-mid pa3">
+              <a href="/" class="dib w2 h2 pa1 ba b--white-90 grow-large border-box">
+                <svg class="link white-90 hover-white" data-icon="skull" viewBox="0 0 32 32" style="fill:currentcolor"><title>skull icon</title><path d="M16 0 C6 0 2 4 2 14 L2 22 L6 24 L6 30 L26 30 L26 24 L30 22 L30 14 C30 4 26 0 16 0 M9 12 A4.5 4.5 0 0 1 9 21 A4.5 4.5 0 0 1 9 12 M23 12 A4.5 4.5 0 0 1 23 21 A4.5 4.5 0 0 1 23 12"></path></svg>
+              </a>
+            </div>
+            <div class="dtc v-mid tr pa3">
+              <a class="f6 fw4 hover-white no-underline white-90 dn dib-ns pv2 ph3" href="/" >The Wedding</a>
+              <a class="f6 fw4 hover-white no-underline white-90 dn dib-ns pv2 ph3" href="/" >RSVP</a>
+              <a class="f6 fw4 hover-white no-underline white-90 dn dib-l pv2 ph3" href="/" >Travel</a>
+              <a class="f6 fw4 hover-white no-underline white-90 dn dib-l pv2 ph3" href="/" >Gift Registry</a>
+            </div>
+          </nav>
+          <div class="">
+            <img src="/images/desktop-hero-image.png"
+            alt="Ines and Nelson are getting married on 5th August 2017 at 16h00"
+            class="db"/>
+          </div>
+        </div>
+      </div>
+    </header> -->
+
+    <header class="bg-light-gray fixed w-100 ph3 pv3 pv3-ns ph4-m ph5-l o-90">
+      <nav class="f6 f5-ns fw3 la tr">
+        <a class="link dim dark-gray dib mr3" href="#" title="Home">Wedding</a>
+        <a class="link dim dark-gray  dib mr3" href="#" title="About">RSVP</a>
+        <a class="link dim dark-gray  dib mr3" href="#" title="Store">Travel</a>
+        <a class="link dim dark-gray  dib mr3" href="#" title="Contact">Gifts</a>
+      </nav>
+    </header>
+
+    <section class="pb5">
+      <img src="/images/top-left-leaves.jpg"
+      alt="Some fun leaves for decoration"
+      class="db w-50 w-third-ns"/>
+      <img src="/images/ines-and-nelson.png"
+      alt="Ines and Nelson are getting married on 5th August 2017 at 16h00. See
+      below for more information."
+      class="absolute top-5 left-25p w-50 pt3"/>
+      <p class='sr-only'> Welcome! Ines and Nelson are getting married on 5th
+        August 2017 at 16h00. Read below for more information.
+      </p>
+    </section>
+
+    <section class="bg-in-green w-100">
+      <h1 class="white"> RSVP </h1>
+    </section>
+
+  </body>
+</html>
