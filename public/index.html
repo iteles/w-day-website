@@ -12,6 +12,7 @@
 
     <link rel="stylesheet" href="https://unpkg.com/tachyons@4.6.1/css/tachyons.min.css">
     <link rel="shortcut icon" type="image/png" href="http://www.dwyl.io/img/favicon.ico"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
     <style>
       .bg-in-green { background-color: #8BA951; }
@@ -32,34 +33,14 @@
         clip: rect(0,0,0,0);
       }
 
+      .roboto{
+        font-family: 'Roboto', sans-serif;
+      }
+
     </style>
   </head>
 
   <body class="bg-white black h-100 h5">
-    <!-- <header class="sans-serif">
-      <div class="cover bg-left bg-center-l">
-        <div class="pb5 pb6-m pb7-l">
-          <nav class="bg-in-green dt w-100 mw8 center">
-            <div class="dtc w2 v-mid pa3">
-              <a href="/" class="dib w2 h2 pa1 ba b--white-90 grow-large border-box">
-                <svg class="link white-90 hover-white" data-icon="skull" viewBox="0 0 32 32" style="fill:currentcolor"><title>skull icon</title><path d="M16 0 C6 0 2 4 2 14 L2 22 L6 24 L6 30 L26 30 L26 24 L30 22 L30 14 C30 4 26 0 16 0 M9 12 A4.5 4.5 0 0 1 9 21 A4.5 4.5 0 0 1 9 12 M23 12 A4.5 4.5 0 0 1 23 21 A4.5 4.5 0 0 1 23 12"></path></svg>
-              </a>
-            </div>
-            <div class="dtc v-mid tr pa3">
-              <a class="f6 fw4 hover-white no-underline white-90 dn dib-ns pv2 ph3" href="/" >The Wedding</a>
-              <a class="f6 fw4 hover-white no-underline white-90 dn dib-ns pv2 ph3" href="/" >RSVP</a>
-              <a class="f6 fw4 hover-white no-underline white-90 dn dib-l pv2 ph3" href="/" >Travel</a>
-              <a class="f6 fw4 hover-white no-underline white-90 dn dib-l pv2 ph3" href="/" >Gift Registry</a>
-            </div>
-          </nav>
-          <div class="">
-            <img src="/images/desktop-hero-image.png"
-            alt="Ines and Nelson are getting married on 5th August 2017 at 16h00"
-            class="db"/>
-          </div>
-        </div>
-      </div>
-    </header> -->
 
     <header class="bg-light-gray fixed w-100 ph3 pv3 pv3-ns ph4-m ph5-l o-90">
       <nav class="f6 f5-ns fw3 la tr">
@@ -70,21 +51,66 @@
       </nav>
     </header>
 
-    <section class="pb5">
+<!-- Leaves and 'Ines & Nelson date' block -->
+    <section class="pb5 pb6-ns">
       <img src="/images/top-left-leaves.jpg"
       alt="Some fun leaves for decoration"
       class="db w-50 w-third-ns"/>
       <img src="/images/ines-and-nelson.png"
       alt="Ines and Nelson are getting married on 5th August 2017 at 16h00. See
       below for more information."
-      class="absolute top-5 left-25p w-50 pt3"/>
-      <p class='sr-only'> Welcome! Ines and Nelson are getting married on 5th
+      class="absolute top-5 left-25p w-60 w-50-ns pt3"/>
+      <h1 class='sr-only'> Welcome! Ines and Nelson are getting married on 5th
         August 2017 at 16h00. Read below for more information.
-      </p>
+      </h1>
     </section>
 
+<!-- RSVP block -->
     <section class="bg-in-green w-100">
-      <h1 class="white"> RSVP </h1>
+      <h2 class="ma0 roboto f2 f1-ns white tc pt3"> RSVP </h2>
+
+      <form class="pa4 black-80">
+        <div class="measure">
+          <label for="name" class="f6 b db mb2">Name</label>
+          <input id="name" class="input-reset ba b--black-20 pa2 mb2 db w-100 w-50-ns br2" type="text" aria-describedby="name-desc">
+        </div>
+        <div class="mt3 measure">
+          <fieldset id="favorite_movies" class="ph0 pb0 bn">
+            <legend class="f6 b db mb2">Will you be attending?</legend>
+            <div class="flex items-center mb2">
+              <input class="mr2" type="radio" id="attending" value="attending" name="attendance">
+              <label for="spacejam" class="f6 black-60 db">Heck yes!</label>
+            </div>
+            <div class="flex items-center mb2">
+              <input class="mr2" type="radio" id="not-attending" value="not-attending" name="attendance">
+              <label for="airbud" class="f6 black-60 db">Bummer, no.</label>
+            </div>
+          </fieldset>
+        </div>
+        <div class="mt3 measure">
+          <label for="name" class="f6 b db mb2">Number of additional guests <span class="normal black-60">(optional)</span></label>
+          <input id="name" class="input-reset ba b--black-20 pa2 mb2 db w-100 w-50-ns br2" type="text" aria-describedby="name-desc">
+          <small id="name-desc" class="f6 black-60 db mb2">If you're not coming alone, please let us know how many more people are joining you.</small>
+        </div>
+        <div class="mt3 measure">
+          <label for="name" class="f6 b db mb2">Song request for the big day</label>
+          <input id="name" class="input-reset ba b--black-20 pa2 mb2 db w-100 w-50-ns br2" type="text" aria-describedby="name-desc">
+        </div>
+        <div class="mt3 measure">
+          <fieldset id="favorite_movies" class="ph0 pb0 bn">
+            <legend class="f6 b db mb2">Are you vegetarian or vegan?</legend>
+            <div class="flex items-center mb2">
+              <input class="mr2" type="radio" id="attending" value="attending" name="attendance">
+              <label for="spacejam" class="f6 black-60 db">Yep</label>
+            </div>
+            <div class="flex items-center mb2">
+              <input class="mr2" type="radio" id="not-attending" value="not-attending" name="attendance">
+              <label for="airbud" class="f6 black-60 db">Definitely not.</label>
+            </div>
+          </fieldset>
+        </div>
+
+      </form>
     </section>
 
   </body>
