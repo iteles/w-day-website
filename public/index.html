@@ -10,64 +10,39 @@
     <meta name="author" content="@iteles @nelsonic">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link rel="stylesheet" href="main.css" type="text/css">
     <link rel="stylesheet" href="https://unpkg.com/tachyons@4.6.1/css/tachyons.min.css">
+
     <link rel="shortcut icon" type="image/png" href="http://www.dwyl.io/img/favicon.ico"/>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-
-    <style>
-      .bg-in-green { background-color: #8BA951; }
-      .bg-in-yellow { background-color: #FBD000; }
-
-      .top-5 { top: 5rem; }
-      .left-25p {left: 25%; }
-
-      .sr-only{
-        color: red;
-        position:absolute;
-        width:1px;
-        height:1px;
-        padding:0;
-        margin:-1px;
-        border:0;
-        overflow:hidden;
-        clip: rect(0,0,0,0);
-      }
-
-      .roboto{
-        font-family: 'Roboto', sans-serif;
-      }
-
-      .z--5 { z-index: -5; }
-
-      .z--1 { z-index: -1; }
-
-    </style>
   </head>
 
   <body class="bg-white black h-100 h5">
 
-    <header class="bg-light-gray fixed w-100 ph3 pv3 pv3-ns ph4-m ph5-l o-90">
-      <nav class="f6 f5-ns fw3 la tr">
-        <a class="link dim dark-gray dib mr3" href="#" title="Home">Wedding</a>
-        <a class="link dim dark-gray  dib mr3" href="#" title="About">RSVP</a>
-        <a class="link dim dark-gray  dib mr3" href="#" title="Store">Travel</a>
-        <a class="link dim dark-gray  dib mr3" href="#" title="Contact">Gifts</a>
-      </nav>
-    </header>
+    <header class="relative">
+      <div class="bg-light-gray fixed w-100 ph3 pv3 pv3-ns ph4-m ph5-l o-90">
+        <nav class="f6 f5-ns fw3 la tr">
+          <a class="link dim dark-gray dib mr3" href="#" title="Home">Wedding</a>
+          <a class="link dim dark-gray  dib mr3" href="#" title="About">RSVP</a>
+          <a class="link dim dark-gray  dib mr3" href="#" title="Store">Travel</a>
+          <a class="link dim dark-gray  dib mr3" href="#" title="Contact">Gifts</a>
+        </nav>
+      </div>
 
 <!-- Leaves and 'Ines & Nelson date' block -->
-    <section class="pb5 pb6-ns">
-      <img src="/images/top-left-leaves.png"
-      alt="Some fun leaves for decoration"
-      class="db w-50 w-third-ns z--5"/>
-      <img src="/images/ines-and-nelson.png"
-      alt="Ines and Nelson are getting married on 5th August 2017 at 16h00. See
-      below for more information."
-      class="absolute top-5 left-25p w-60 w-50-ns pt3 z--1"/>
-      <h1 class='sr-only'> Welcome! Ines and Nelson are getting married on 5th
-        August 2017 at 16h00. Read below for more information.
-      </h1>
-    </section>
+      <section class="pb5 pb6-ns">
+        <img src="/images/top-left-leaves.png"
+        alt="Some fun leaves for decoration"
+        class="db w-50 w-third-ns z--5"/>
+        <img src="/images/ines-and-nelson.png"
+        alt="Ines and Nelson are getting married on 5th August 2017 at 16h00. See
+        below for more information."
+        class="absolute top-5 left-25p w-60 w-50-ns pt3 z--1"/>
+        <h1 class='sr-only'> Welcome! Ines and Nelson are getting married on 5th
+          August 2017 at 16h00. Read below for more information.
+        </h1>
+      </section>
+    </header>
 
 <!-- RSVP block -->
     <section class="bg-in-green w-100">
