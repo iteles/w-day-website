@@ -23,7 +23,7 @@
       <div class="bg-light-gray fixed w-100 ph3 pv3 pv3-ns ph4-m ph5-l o-90">
         <nav class="f6 f5-ns fw3 la tr">
           <a class="link dim dark-gray dib mr3" href="#" title="Home">Wedding</a>
-          <a class="link dim dark-gray  dib mr3" href="#" title="About">RSVP</a>
+          <a class="link dim dark-gray  dib mr3" href="#rsvp" title="About">RSVP</a>
           <a class="link dim dark-gray  dib mr3" href="#" title="Store">Travel</a>
           <a class="link dim dark-gray  dib mr3" href="#" title="Contact">Gifts</a>
         </nav>
@@ -45,15 +45,19 @@
     </header>
 
 <!-- RSVP block -->
-    <section class="bg-in-green w-100">
+    <section id="rsvp" class="bg-in-green w-100 cf">
       <h2 class="ma0 roboto f2 f1-ns white tc pt3"> RSVP </h2>
 
-      <form class="pa4 black-80">
-        <div class="measure">
+      <form class="pa3 pt4-ns pl0-ns pr0-ns black-80 w-80-ns w-60-l center">
+        <div class="mt3 mt0-ns w-100 w-50-ns fl">
           <label for="name" class="f6 b db mb2">Name</label>
-          <input id="name" class="input-reset ba b--black-20 pa2 mb2 db w-100 w-50-ns br2" type="text" aria-describedby="name-desc">
+          <input id="name" class="input-reset ba b--black-20 pa2 mb2 db w-90 br2" type="text" aria-describedby="name-desc">
         </div>
-        <div class="mt3 measure">
+        <div class="mt3 mt0-ns w-100 w-50-ns fl">
+          <label for="name" class="f6 b db mb2">Number of additional guests <span class="normal black-60">(if any)</span></label>
+          <input id="add-guests" class="input-reset ba b--black-20 pa2 mb2 db w-90 br2" type="text" aria-describedby="name-desc">
+        </div>
+        <div class="mt3 mt4-ns w-100 w-50-ns fl">
           <fieldset id="favorite_movies" class="ph0 pb0 bn">
             <legend class="f6 b db mb2">Will you be attending?</legend>
             <div class="flex items-center mb2">
@@ -66,29 +70,28 @@
             </div>
           </fieldset>
         </div>
-        <div class="mt3 measure">
-          <label for="name" class="f6 b db mb2">Number of additional guests <span class="normal black-60">(optional)</span></label>
-          <input id="name" class="input-reset ba b--black-20 pa2 mb2 db w-100 w-50-ns br2" type="text" aria-describedby="name-desc">
-          <small id="name-desc" class="f6 black-60 db mb2">If you're not coming alone, please let us know how many more people are joining you.</small>
-        </div>
-        <div class="mt3 measure">
-          <label for="name" class="f6 b db mb2">Song request for the big day</label>
-          <input id="name" class="input-reset ba b--black-20 pa2 mb2 db w-100 w-50-ns br2" type="text" aria-describedby="name-desc">
-        </div>
-        <div class="mt3 measure">
+        <div class="mt3 mt4-ns w-100 w-50-ns fl">
           <fieldset id="favorite_movies" class="ph0 pb0 bn">
             <legend class="f6 b db mb2">Are you vegetarian or vegan?</legend>
             <div class="flex items-center mb2">
-              <input class="mr2" type="radio" id="attending" value="attending" name="attendance">
-              <label for="spacejam" class="f6 black-60 db">Yep</label>
+              <input class="mr2" type="radio" id="attending" value="vegetarian" name="vegetarian">
+              <label for="vegetarian" class="f6 black-60 db">That's me!</label>
             </div>
             <div class="flex items-center mb2">
-              <input class="mr2" type="radio" id="not-attending" value="not-attending" name="attendance">
-              <label for="airbud" class="f6 black-60 db">Definitely not.</label>
+              <input class="mr2" type="radio" id="not-attending" value="not-vegetarian" name="vegetarian">
+              <label for="not-vegetarian" class="f6 black-60 db">Definitely not.</label>
             </div>
           </fieldset>
         </div>
-
+        <div class="mt3 mt4-ns w-100 w-50-ns fl">
+          <label for="name" class="f6 b db mb2">Need help with accommodation?</label>
+          <input id="name" class="input-reset ba b--black-20 pa2 mb2 db w-90 br2" type="text" aria-describedby="name-desc">
+        </div>
+        <div class="mt3 mt4-ns w-100 w-50-ns fl center">
+          <label for="name" class="f6 b db mb2">Favourite dance floor jam?<span class="normal black-60">(optional)</span></label>
+          <input id="name" class="input-reset ba b--black-20 pa2 mb2 db w-90 br2" type="text" aria-describedby="name-desc">
+        </div>
+        <button type="submit" class="cf pointer br2 ba bw1 white bg-in-green b--white dim pv2 ph3 mv3 f5">Submit</button>
       </form>
     </section>
 
