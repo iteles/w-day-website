@@ -1,0 +1,25 @@
+.bg-in-green { background-color: #8BA951; }
+.bg-in-yellow { background-color: #FBD000; }
+
+.top-5 { top: 5rem; }
+.left-25p {left: 25%; }
+
+.sr-only{
+  color: red;
+  position:absolute;
+  width:1px;
+  height:1px;
+  padding:0;
+  margin:-1px;
+  border:0;
+  overflow:hidden;
+  clip: rect(0,0,0,0);
+}
+
+.roboto{
+  font-family: 'Roboto', sans-serif;
+}
+
+.z--5 { z-index: -5; }
+
+.z--1 { z-index: -1; }

@@ -1,0 +1,25 @@
+{
+  "name": "ines-and-nelson-get-married",
+  "version": "0.0.1",
+  "description": "Wedding day website so guests have all the information they need",
+  "main": "public/index.html",
+  "scripts": {
+    "start": "live-server --port=8000 --open=public/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://www.inesandnelson.com"
+  },
+  "author": "@iteles, @nelsonic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iteles/w-day-website/issues"
+  },
+  "homepage": "https://github.com/iteles/w-day-website#readme",
+  "devDependencies": {
+    "live-server": "^1.2.0"
+  },
+  "dependencies": {
+    "tachyons": "^4.7.4"
+  }
+}

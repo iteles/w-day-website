@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+      Ines + Nelson
+    </title>
+    <meta name="description" content="Build beautiful, responsive, readable interfaces.">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="author" content="@iteles @nelsonic">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.6.1/css/tachyons.min.css">
+
+    <link rel="shortcut icon" type="image/png" href="http://www.dwyl.io/img/favicon.ico"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  </head>
+
+  <body class="bg-white black h-100 h5">
+
+    <header class="relative">
+      <div class="bg-light-gray fixed w-100 ph3 pv3 pv3-ns ph4-m ph5-l o-90">
+        <nav class="f6 f5-ns fw3 la tr">
+          <a class="link dim dark-gray dib mr3" href="#" title="Home">Wedding</a>
+          <a class="link dim dark-gray  dib mr3" href="#rsvp" title="About">RSVP</a>
+          <a class="link dim dark-gray  dib mr3" href="#" title="Store">Travel</a>
+          <a class="link dim dark-gray  dib mr3" href="#" title="Contact">Gifts</a>
+        </nav>
+      </div>
+
+<!-- Leaves and 'Ines & Nelson date' block -->
+      <section class="pb5 pb6-ns">
+        <img src="/images/top-left-leaves.png"
+        alt="Some fun leaves for decoration"
+        class="db w-50 w-third-ns z--5"/>
+        <img src="/images/ines-and-nelson.png"
+        alt="Ines and Nelson are getting married on 5th August 2017 at 16h00. See
+        below for more information."
+        class="absolute top-5 left-25p w-60 w-50-ns pt3 z--1"/>
+        <h1 class='sr-only'> Welcome! Ines and Nelson are getting married on 5th
+          August 2017 at 16h00. Read below for more information.
+        </h1>
+      </section>
+    </header>
+
+<!-- RSVP block -->
+    <section id="rsvp" class="bg-in-green w-100 cf">
+      <h2 class="ma0 roboto f2 f1-ns white tc pt3"> RSVP </h2>
+
+      <form class="pa3 pt4-ns pl0-ns pr0-ns black-80 w-80-ns w-60-l center">
+        <div class="mt3 mt0-ns w-100 w-50-ns fl">
+          <label for="name" class="f6 b db mb2">Name</label>
+          <input id="name" class="input-reset ba b--black-20 pa2 mb2 db w-90 br2" type="text" aria-describedby="name-desc">
+        </div>
+        <div class="mt3 mt0-ns w-100 w-50-ns fl">
+          <label for="name" class="f6 b db mb2">Number of additional guests <span class="normal black-60">(if any)</span></label>
+          <input id="add-guests" class="input-reset ba b--black-20 pa2 mb2 db w-90 br2" type="text" aria-describedby="name-desc">
+        </div>
+        <div class="mt3 mt4-ns w-100 w-50-ns fl">
+          <fieldset id="favorite_movies" class="ph0 pb0 bn">
+            <legend class="f6 b db mb2">Will you be attending?</legend>
+            <div class="flex items-center mb2">
+              <input class="mr2" type="radio" id="attending" value="attending" name="attendance">
+              <label for="spacejam" class="f6 black-60 db">Heck yes!</label>
+            </div>
+            <div class="flex items-center mb2">
+              <input class="mr2" type="radio" id="not-attending" value="not-attending" name="attendance">
+              <label for="airbud" class="f6 black-60 db">Bummer, no.</label>
+            </div>
+          </fieldset>
+        </div>
+        <div class="mt3 mt4-ns w-100 w-50-ns fl">
+          <fieldset id="favorite_movies" class="ph0 pb0 bn">
+            <legend class="f6 b db mb2">Are you vegetarian or vegan?</legend>
+            <div class="flex items-center mb2">
+              <input class="mr2" type="radio" id="attending" value="vegetarian" name="vegetarian">
+              <label for="vegetarian" class="f6 black-60 db">That's me!</label>
+            </div>
+            <div class="flex items-center mb2">
+              <input class="mr2" type="radio" id="not-attending" value="not-vegetarian" name="vegetarian">
+              <label for="not-vegetarian" class="f6 black-60 db">Definitely not.</label>
+            </div>
+          </fieldset>
+        </div>
+        <div class="mt3 mt4-ns w-100 w-50-ns fl">
+          <label for="name" class="f6 b db mb2">Need help with accommodation?</label>
+          <input id="name" class="input-reset ba b--black-20 pa2 mb2 db w-90 br2" type="text" aria-describedby="name-desc">
+        </div>
+        <div class="mt3 mt4-ns w-100 w-50-ns fl center">
+          <label for="name" class="f6 b db mb2">Favourite dance floor jam?<span class="normal black-60">(optional)</span></label>
+          <input id="name" class="input-reset ba b--black-20 pa2 mb2 db w-90 br2" type="text" aria-describedby="name-desc">
+        </div>
+        <button type="submit" class="cf pointer br2 ba bw1 white bg-in-green b--white dim pv2 ph3 mv3 f5">Submit</button>
+      </form>
+    </section>
+
+  </body>
+</html>
