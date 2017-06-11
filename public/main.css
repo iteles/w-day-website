@@ -1,7 +1,10 @@
 .bg-in-green { background-color: #8BA951; }
 .bg-in-yellow { background-color: #FBD000; }
 
-.top-5 { top: 5rem; }
+.top-3 { top: 3rem; }
+@media screen and (min-width: 30em) {
+.top-5-ns { top: 5rem; }
+}
 .left-25p {left: 25%; }
 
 .sr-only{
