@@ -50,14 +50,16 @@
     <section id="rsvp" class="bg-in-green w-100 pb3-ns">
       <h2 class="ma0 codystar f2 f1-ns white tc pt3 pt4-ns"> RSVP </h2>
 
-      <form class="pa3 pt4-ns pl0-ns pr0-ns black-80 w-80-ns w-60-l center">
+      <form id="gform" method="POST"
+      action="https://script.google.com/macros/s/AKfycbwDq-MB-841YcoodOGtqH0g1NO7UzOuGMA-HKWaGS4lf0iXceg/exec"
+      class="pa3 pt4-ns pl0-ns pr0-ns black-80 w-80-ns w-60-l center">
         <div class="mt3 mt0-ns w-100 w-50-ns fl">
           <label for="name" class="f6 b db mb2">Name</label>
           <input id="name" class="input-reset ba b--black-20 pa2 mb2 db w-90 br2" name="guest-name" type="text" aria-describedby="name-desc">
         </div>
         <div class="mt3 mt0-ns w-100 w-50-ns fl">
           <label for="email" class="f6 b db mb2">Email address</label>
-          <input id="email" class="input-reset ba b--black-20 pa2 mb2 db w-90 br2" name="email-address" type="text" aria-describedby="email-desc">
+          <input id="email" class="input-reset ba b--black-20 pa2 mb2 db w-90 br2" name="email" type="text" aria-describedby="email-desc">
         </div>
         <div class="mt3 mt4-ns w-100 w-50-ns fl">
           <fieldset id="will-you-be-attending" class="ph0 pb0 bn">
