@@ -15,16 +15,18 @@
 
     <link rel="shortcut icon" type="image/png" href="http://www.dwyl.io/img/favicon.ico"/>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Codystar" rel="stylesheet">
+    <script src="https://use.fontawesome.com/185fb4464d.js"></script>
   </head>
 
-  <body class="bg-white black h-100 h5">
+  <body class="bg-white dark-gray h-100 h5">
 
     <header class="relative">
       <div class="bg-light-gray fixed w-100 ph3 pv3 pv3-ns ph4-m ph5-l o-90">
         <nav class="f6 f5-ns fw3 la tr">
-          <a class="link dim dark-gray dib mr3" href="#" title="Home">Wedding</a>
-          <a class="link dim dark-gray  dib mr3" href="#rsvp" title="About">RSVP</a>
-          <a class="link dim dark-gray  dib mr3" href="#" title="Store">Travel</a>
+          <a class="link dim dark-gray dib mr3" href="#wedding" title="Wedding details">Wedding</a>
+          <a class="link dim dark-gray  dib mr3" href="#rsvp" title="RSVP">RSVP</a>
+          <a class="link dim dark-gray  dib mr3" href="#travel" title="Getting there">Travel</a>
           <a class="link dim dark-gray  dib mr3" href="#" title="Contact">Gifts</a>
         </nav>
       </div>
@@ -37,7 +39,7 @@
         <img src="/images/ines-and-nelson.png"
         alt="Ines and Nelson are getting married on 5th August 2017 at 16h00. See
         below for more information."
-        class="absolute top-5 left-25p w-60 w-50-ns pt3 z--1"/>
+        class="absolute top-3 top-5-ns left-25p w-60 w-50-ns pt3 z--1"/>
         <h1 class='sr-only'> Welcome! Ines and Nelson are getting married on 5th
           August 2017 at 16h00. Read below for more information.
         </h1>
@@ -45,8 +47,8 @@
     </header>
 
 <!-- RSVP block -->
-    <section id="rsvp" class="bg-in-green w-100 cf">
-      <h2 class="ma0 roboto f2 f1-ns white tc pt3"> RSVP </h2>
+    <section id="rsvp" class="bg-in-green w-100 pb3-ns">
+      <h2 class="ma0 codystar f2 f1-ns white tc pt3 pt4-ns"> RSVP </h2>
 
       <form class="pa3 pt4-ns pl0-ns pr0-ns black-80 w-80-ns w-60-l center">
         <div class="mt3 mt0-ns w-100 w-50-ns fl">
@@ -54,24 +56,24 @@
           <input id="name" class="input-reset ba b--black-20 pa2 mb2 db w-90 br2" type="text" aria-describedby="name-desc">
         </div>
         <div class="mt3 mt0-ns w-100 w-50-ns fl">
-          <label for="name" class="f6 b db mb2">Number of additional guests <span class="normal black-60">(if any)</span></label>
-          <input id="add-guests" class="input-reset ba b--black-20 pa2 mb2 db w-90 br2" type="text" aria-describedby="name-desc">
+          <label for="name" class="f6 b db mb2">Email address</label>
+          <input id="email" class="input-reset ba b--black-20 pa2 mb2 db w-90 br2" type="text" aria-describedby="email-desc">
         </div>
         <div class="mt3 mt4-ns w-100 w-50-ns fl">
-          <fieldset id="favorite_movies" class="ph0 pb0 bn">
+          <fieldset id="will-you-be-attending" class="ph0 pb0 bn">
             <legend class="f6 b db mb2">Will you be attending?</legend>
             <div class="flex items-center mb2">
               <input class="mr2" type="radio" id="attending" value="attending" name="attendance">
-              <label for="spacejam" class="f6 black-60 db">Heck yes!</label>
+              <label for="attending" class="f6 black-60 db">Heck yes!</label>
             </div>
             <div class="flex items-center mb2">
               <input class="mr2" type="radio" id="not-attending" value="not-attending" name="attendance">
-              <label for="airbud" class="f6 black-60 db">Bummer, no.</label>
+              <label for="not-attending" class="f6 black-60 db">Bummer, no.</label>
             </div>
           </fieldset>
         </div>
         <div class="mt3 mt4-ns w-100 w-50-ns fl">
-          <fieldset id="favorite_movies" class="ph0 pb0 bn">
+          <fieldset id="vegetarianism" class="ph0 pb0 bn">
             <legend class="f6 b db mb2">Are you vegetarian or vegan?</legend>
             <div class="flex items-center mb2">
               <input class="mr2" type="radio" id="attending" value="vegetarian" name="vegetarian">
@@ -83,17 +85,102 @@
             </div>
           </fieldset>
         </div>
-        <div class="mt3 mt4-ns w-100 w-50-ns fl">
-          <label for="name" class="f6 b db mb2">Need help with accommodation?</label>
-          <input id="name" class="input-reset ba b--black-20 pa2 mb2 db w-90 br2" type="text" aria-describedby="name-desc">
+        <div class="mt3 mt0-ns w-100 w-50-ns fl">
+          <label for="name" class="f6 b db mb2">Number of additional guests <span class="normal black-60">(if any)</span></label>
+          <input id="add-guests" class="input-reset ba b--black-20 pa2 mb2 db w-90 br2" type="text" aria-describedby="name-desc">
         </div>
         <div class="mt3 mt4-ns w-100 w-50-ns fl center">
           <label for="name" class="f6 b db mb2">Favourite dance floor jam?<span class="normal black-60">(optional)</span></label>
           <input id="name" class="input-reset ba b--black-20 pa2 mb2 db w-90 br2" type="text" aria-describedby="name-desc">
         </div>
-        <button type="submit" class="cf pointer br2 ba bw1 white bg-in-green b--white dim pv2 ph3 mv3 f5">Submit</button>
+        <button type="submit" class="cf pointer br2 ba bw1 b--white white bg-in-green dim pv2 ph3 mv3 f5 tc">Submit</button>
       </form>
     </section>
+
+    <!--Wedding block-->
+    <section id="wedding" class="w-100 pb3-ns">
+      <h2 class="ma0 codystar f2 f1-ns dark-gray tc pt3  pt4-ns"> Wedding Details </h2>
+      <!--Wedding block content -->
+      <div class="w-80-ns w-60-l tc center dark-gray">
+        <h3>Saturday 5th August, 16h00</h3>
+        <p> Mosteiro Santa Maria de Landim <br/>
+          Alameda do Mosteiro <br/>
+          4770-328 Landim <br/>
+          Vila Nova de Famalicão, Portugal </p>
+        <p class="codystar"> ===== </p>
+        <p class="i"> Dress Code: Cocktail</p>
+        <p> <span class="b">Ladies:</span> Summer cocktail attire of your choice.<br/>
+            <span class="b">Men:</span> Ties and blazers for the ceremony <br/> &amp; photos,
+             open shirts after that. </p>
+       <img src="/images/landim.png"
+       alt="Line drawing of the mosteiro de Landim as a separator"
+       class="center"/>
+        <p> All events including the ceremony will take place at the Mosteiro. <br/>
+          <span class="i">Come prepared for dinner and dancing!</span></p>
+      </div>
+    </section>
+
+
+      <!--Getting there block-->
+      <section id="travel" class="bg-in-green w-100 cf pb3-ns">
+        <h2 class="ma0 codystar f2 f1-ns white tc pt3 pt4-ns pb3"> Getting there </h2>
+
+        <div class="fl w-100 w-50-ns pa2">
+          <div class="ph2 ph3-ns">
+            <p>You'll want to fly in to <span class="i">Porto Airport (Aeroporto Francisco Sá Carneiro)</span>.
+            We've also done the trip by train and ferry before but not one for those short on time!</p>
+            <p>Landim is around a 35 minute drive from Porto (through the motorway)
+              and the nearest town is Vila Nova de Famalicão, around 15 minutes by car.</p>
+            <p>There is <span class="b">no easy way of getting to the venue by public transport</span>
+              (London friends, you ain't in Kansas any more) so let us know if you
+              need help getting to the Mosteiro.</p>
+              <p class="white center"><span class="b white center">GPS co-ordinates:</span> 41°22'46.1"N+8°27'51.8"W</p>
+
+          </div>
+        </div>
+        <div class="fl w-100 w-50-ns pa2 center">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2993.7519979759413!2d-8.466560584921297!3d41.37947260444936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd24f61285cbd035%3A0xf11ff2ba637bd6f1!2sMosteiro+de+Santa+Maria+de+Landim!5e0!3m2!1sen!2suk!4v1497188242476"
+           class="w-90 bn h5 ma2"
+           frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <!-- Getting home div-->
+        <div class="w-100 pa2 pb3-ns cb">
+          <h2 class="ma0 codystar f2 f1-ns white tc pt3 pt4-ns pb3"> Getting Home </h2>
+          <div class="w-80-ns w-70-l tc center">
+            <p> We'll have some <span class="b">mini buses available</span> at the end of the night doing
+              a couple of trips to Vila Nova de Famalicão and Porto to drop people
+              off who need a ride. <i class="fa fa-bus" aria-hidden="true"></i> </p>
+            <p>  We'll also make sure we have <span class="b">mobile phone charging stations</span> at the Mosteiro so the more
+              technology dependent among us have an operational navigation system for their
+              journey home! <i class="fa fa-mobile" aria-hidden="true"></i> </p>
+          </div>
+      </section>
+
+      <!--Gifts-->
+      <section id="gifts" class="w-100">
+        <h2 class="ma0 codystar f2 f1-ns dark-gray tc pt3"> Gift Registry </h2>
+
+        <div class="w-80-ns w-70-l tc center dark-gray pa2">
+            <p>We're very grateful to those that have travelled to spend this day with us
+              and that is in and of itself all we are asking for. Thank you!<p>
+
+            <p>If you would like to buy us a gift, we have a
+              <a href="https://www.elcorteingles.es/listasdeboda_ssl/invitados/celebrantes_acceso.asp?promo=01">gift registry at El Corte Ingles</a>.
+              You can access it by searching for 'Teles' or 'Correia' in the
+              <span class="i">"Apelidos"</span> box and finding our names.
+            </div>
+          </div>
+      </section>
+
+      <!--Footer-->
+      <section class="w-100 bg-in-yellow pa2">
+        <img src="/images/landim.png"
+        alt="Line drawing of the mosteiro de Landim as a separator"
+        class="fr h2"/>
+        <p class="m0 f6 tr pr4 white">If you have a questions <a href="mailto:mdc+wedding@adecoy.com" class='white'>drop us an email</a>.</p>
+      </section>
+
 
   </body>
 </html>
