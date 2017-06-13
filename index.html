@@ -60,6 +60,8 @@
         <div class="mt3 mt0-ns w-100 w-50-ns fl">
           <label for="email" class="f6 b db mb2">Email address</label>
           <input id="email" class="input-reset ba b--black-20 pa2 mb2 db w-90 br2" name="email" type="text" aria-describedby="email-desc">
+          <span id="email-invalid" style="visibility:hidden">
+            Must be a valid email address</span>
         </div>
         <div class="mt3 mt4-ns w-100 w-50-ns fl">
           <fieldset id="will-you-be-attending" class="ph0 pb0 bn">
@@ -97,6 +99,11 @@
         </div>
         <button type="submit" class="cf pointer br2 ba bw1 b--white white bg-in-green dim pv2 ph3 mv3 f5 tc">Submit</button>
       </form>
+
+      <div style="display:none;" id="thankyou_message">
+    <h2><em>Thanks</em> for contacting us!
+      We will get back to you soon!</h2>
+  </div>
     </section>
 
     <!--Wedding block-->
@@ -183,6 +190,9 @@
         <p class="m0 f6 tr pr4 white">If you have a questions <a href="mailto:mdc+wedding@adecoy.com" class='white'>drop us an email</a>.</p>
       </section>
 
+      <script data-cfasync="false" type="text/javascript"
+  src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js">
+      </script>
 
   </body>
 </html>

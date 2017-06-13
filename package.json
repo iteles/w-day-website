@@ -4,7 +4,7 @@
   "description": "Wedding day website so guests have all the information they need",
   "main": "index.html",
   "scripts": {
-    "start": "live-server --port=8000 --open=public/"
+    "start": "live-server --port=8000 --open=/"
   },
   "repository": {
     "type": "git",
