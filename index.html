@@ -50,24 +50,28 @@
     <section id="rsvp" class="bg-in-green w-100 pb3-ns">
       <h2 class="ma0 codystar f2 f1-ns white tc pt3 pt4-ns"> RSVP </h2>
 
-      <form class="pa3 pt4-ns pl0-ns pr0-ns black-80 w-80-ns w-60-l center">
+      <form id="gform" method="POST"
+      action="https://script.google.com/macros/s/AKfycbwDq-MB-841YcoodOGtqH0g1NO7UzOuGMA-HKWaGS4lf0iXceg/exec"
+      class="pa3 pt4-ns pl0-ns pr0-ns black-80 w-80-ns w-60-l center">
         <div class="mt3 mt0-ns w-100 w-50-ns fl">
           <label for="name" class="f6 b db mb2">Name</label>
-          <input id="name" class="input-reset ba b--black-20 pa2 mb2 db w-90 br2" type="text" aria-describedby="name-desc">
+          <input id="name" class="input-reset ba b--black-20 pa2 mb2 db w-90 br2" name="name" type="text" aria-describedby="name-desc">
         </div>
         <div class="mt3 mt0-ns w-100 w-50-ns fl">
-          <label for="name" class="f6 b db mb2">Email address</label>
-          <input id="email" class="input-reset ba b--black-20 pa2 mb2 db w-90 br2" type="text" aria-describedby="email-desc">
+          <label for="email" class="f6 b db mb2">Email address</label>
+          <input id="email" class="input-reset ba b--black-20 pa2 mb2 db w-90 br2" name="email" type="text" aria-describedby="email-desc">
+          <span id="email-invalid" class="f6 black" style="visibility:hidden" >
+            Must be a valid email address</span>
         </div>
         <div class="mt3 mt4-ns w-100 w-50-ns fl">
           <fieldset id="will-you-be-attending" class="ph0 pb0 bn">
             <legend class="f6 b db mb2">Will you be attending?</legend>
             <div class="flex items-center mb2">
-              <input class="mr2" type="radio" id="attending" value="attending" name="attendance">
+              <input class="mr2" type="radio" id="attending" value="attending" name="attending">
               <label for="attending" class="f6 black-60 db">Heck yes!</label>
             </div>
             <div class="flex items-center mb2">
-              <input class="mr2" type="radio" id="not-attending" value="not-attending" name="attendance">
+              <input class="mr2" type="radio" id="not-attending" value="not-attending" name="attending">
               <label for="not-attending" class="f6 black-60 db">Bummer, no.</label>
             </div>
           </fieldset>
@@ -85,16 +89,20 @@
             </div>
           </fieldset>
         </div>
-        <div class="mt3 mt0-ns w-100 w-50-ns fl">
+        <div class="mt3 mt4-ns w-100 w-50-ns fl">
           <label for="name" class="f6 b db mb2">Number of additional guests <span class="normal black-60">(if any)</span></label>
-          <input id="add-guests" class="input-reset ba b--black-20 pa2 mb2 db w-90 br2" type="text" aria-describedby="name-desc">
+          <input id="add-guests" class="input-reset ba b--black-20 pa2 mb2 db w-90 br2" type="text" name="additional-guests" aria-describedby="name-desc">
         </div>
         <div class="mt3 mt4-ns w-100 w-50-ns fl center">
           <label for="name" class="f6 b db mb2">Favourite dance floor jam?<span class="normal black-60">(optional)</span></label>
-          <input id="name" class="input-reset ba b--black-20 pa2 mb2 db w-90 br2" type="text" aria-describedby="name-desc">
+          <input id="name" class="input-reset ba b--black-20 pa2 mb2 db w-90 br2" type="text" name="song" aria-describedby="name-desc">
         </div>
         <button type="submit" class="cf pointer br2 ba bw1 b--white white bg-in-green dim pv2 ph3 mv3 f5 tc">Submit</button>
       </form>
+
+      <div  id="thankyou_message" style="display:none;" class="w-80-ns w-60-l tc center">
+    <h3><em>Thanks</em> for taking the time to RSVP!</h3> <i class="fa fa-heart-o" aria-hidden="true"></i>
+  </div>
     </section>
 
     <!--Wedding block-->
@@ -158,8 +166,8 @@
       </section>
 
       <!--Gifts-->
-      <section id="gifts" class="w-100">
-        <h2 class="ma0 codystar f2 f1-ns dark-gray tc pt3"> Gift Registry </h2>
+      <section id="gifts" class="w-100 pb3-ns">
+        <h2 class="ma0 codystar f2 f1-ns dark-gray tc pt3 pt4-ns"> Gift Registry </h2>
 
         <div class="w-80-ns w-70-l tc center dark-gray pa2">
             <p>We're very grateful to those that have travelled to spend this day with us
@@ -181,6 +189,9 @@
         <p class="m0 f6 tr pr4 white">If you have a questions <a href="mailto:mdc+wedding@adecoy.com" class='white'>drop us an email</a>.</p>
       </section>
 
+      <script data-cfasync="false" type="text/javascript"
+  src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js">
+      </script>
 
   </body>
 </html>
