@@ -25,7 +25,7 @@
       <div class="bg-light-gray fixed w-100 ph1 ph3-ns ph4-m ph5-l pv3 o-90">
         <nav class="f6 f5-ns fw3 la tr">
           <a class="link dim dark-gray dib mr3" href="#detalhes" title="Wedding details">Detalhes</a>
-          <a class="link dim dark-gray  dib mr3" href="#rsvp" title="RSVP">RSVP</a>
+          <a class="link dim dark-gray  dib mr3" href="#obrigada" title="Obrigada">Obrigada!</a>
           <a class="link dim dark-gray  dib mr3" href="#transportes" title="Transportes">Direcções</a>
           <a class="link dim dark-gray  dib mr3" href="#lista" title="Lista de casamento">Lista</a>
           <a class="link dim dark-gray  dib mr3" href="../index.html" title="English version">
@@ -42,69 +42,19 @@
         <img src="../images/ines-and-nelson-pt.jpg"
         alt="A Ines e o Nelson vão-se casar no dia 5 de Agosto 2017. Mais informação abaixo."
         class="absolute top-3 top-5-ns left-25p w-60 w-50-ns pt3 z--1"/>
-        <h1 class='sr-only'> Bem vindos! A Ines e o Nelson vão-se casar no dia 5 de Agosto 2017 às 16h00.
+        <h1 class='sr-only'> Bem vindos! A Ines e o Nelson casaram-se no dia 5 de Agosto 2017 às 16h00.
           Mais informação abaixo.
         </h1>
       </section>
     </header>
 
-<!-- RSVP block -->
-    <section id="rsvp" class="bg-in-green w-100 pb3-ns">
-      <h2 class="ma0 codystar f2 f1-ns white tc pt3 pt4-ns"> RSVP </h2>
+<!-- Old RSVP block -->
+    <section id="obrigada" class="bg-in-green w-100 pb3-ns">
+      <h2 class="ma0 codystar f2 f1-ns white tc pt3 pt4-ns pb3"> Foi um dia feliz </h2>
 
-      <form id="gform" method="POST"
-      action="https://script.google.com/macros/s/AKfycbwDq-MB-841YcoodOGtqH0g1NO7UzOuGMA-HKWaGS4lf0iXceg/exec"
-      class="pa3 pt4-ns pl0-ns pr0-ns black-80 w-80-ns w-60-l center">
-        <div class="mt3 mt0-ns w-100 w-50-ns fl">
-          <label for="name" class="f6 b db mb2">Nome</label>
-          <input id="name" class="input-reset ba b--black-20 pa2 mb2 db w-90 br2" name="name" type="text" aria-describedby="name-desc">
-        </div>
-        <div class="mt3 mt0-ns w-100 w-50-ns fl">
-          <label for="email" class="f6 b db mb2">Email</label>
-          <input id="email" class="input-reset ba b--black-20 pa2 mb2 db w-90 br2" name="email" type="text" aria-describedby="email-desc">
-          <span id="email-invalid" class="f6 bg-white red ba pa2" style="display:none">
-          ↑ Este email é invalido! ↑</span>
-        </div>
-        <div class="mt3 mt4-ns w-100 w-50-ns fl">
-          <fieldset id="will-you-be-attending" class="ph0 pb0 bn">
-            <legend class="f6 b db mb2">Confirme a sua presença!</legend>
-            <div class="flex items-center mb2">
-              <input class="mr2" type="radio" id="attending" value="attending" name="attending">
-              <label for="attending" class="f6 black-60 db">Venho, claro!</label>
-            </div>
-            <div class="flex items-center mb2">
-              <input class="mr2" type="radio" id="not-attending" value="not-attending" name="attending">
-              <label for="not-attending" class="f6 black-60 db">Infelizmente não venho.</label>
-            </div>
-          </fieldset>
-        </div>
-        <div class="mt3 mt4-ns w-100 w-50-ns fl">
-          <fieldset id="vegetarianism" class="ph0 pb0 bn">
-            <legend class="f6 b db mb2">É vegetariano ou vegan?</legend>
-            <div class="flex items-center mb2">
-              <input class="mr2" type="radio" id="attending" value="vegetarian" name="vegetarian">
-              <label for="vegetarian" class="f6 black-60 db">Sim, sou!</label>
-            </div>
-            <div class="flex items-center mb2">
-              <input class="mr2" type="radio" id="not-attending" value="not-vegetarian" name="vegetarian">
-              <label for="not-vegetarian" class="f6 black-60 db">Não.</label>
-            </div>
-          </fieldset>
-        </div>
-        <div class="mt3 mt4-ns w-100 w-50-ns fl">
-          <label for="name" class="f6 b db mb2">Número de pessoas que vêm consigo<span class="normal black-60"> (opcional)</span></label>
-          <input id="add-guests" class="input-reset ba b--black-20 pa2 mb2 db w-90 br2" type="text" name="additional-guests" aria-describedby="name-desc">
-        </div>
-        <div class="mt3 mt4-ns w-100 w-50-ns fl center">
-          <label for="name" class="f6 b db mb2">Qual é a sua música preferida para a dançar? <span class="normal black-60">(opcional)</span></label>
-          <input id="song" class="input-reset ba b--black-20 pa2 mb2 db w-90 br2" type="text" name="song" aria-describedby="name-desc">
-        </div>
-        <button type="submit" class="cf pointer br2 ba bw1 b--white white bg-in-green dim pv2 ph3 mv3 f5 tc">Enviar</button>
-      </form>
-
-      <div  id="thankyou_message" style="display:none;" class="w-80-ns w-60-l tc center">
-    <h3><em>Obrigada</em> pela sua resposta!</h3> <i class="fa fa-heart-o" aria-hidden="true"></i>
-  </div>
+    <div class="w-80-ns w-70-l tc center pa3">
+      E assim, de repente, já passou o dia! Obrigada a todos que se juntaram a nós, foi inesquecível. <i class="fa fa-heart" aria-hidden="true"></i>
+    </div>
     </section>
 
     <!--Wedding block-->
@@ -176,7 +126,7 @@
               Landim para passar o dia connosco e não pedimos mais que a vossa companhia
               e os vossos sorrisos. Obrigada! </p>
 
-              <p>Se quiser oferecer-nos qualquer coisa, uma contribuição para a nossa
+              <p>Se no entanto nos quiserem oferecer qualquer coisa, uma contribuição para a nossa
                 lua de mel será alegremente recebida! <br/>
                 <span class="b">NIB: 0019 0063 00200006126 34 </span><br/></p>
                   <!-- IBAN: PT50 001900630020000612634 <br/>
